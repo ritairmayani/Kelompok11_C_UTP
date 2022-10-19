@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-19 05:05:12 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLVBHM1RVMFM7MjAyMi0xMC0xOTswMjozODoyNiBQTTsyNjU2"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLVBHM1RVMFM7MjAyMi0xMC0xOTswNTowNToxMiBQTTs5OzI3NjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jumlah, hitungdzikir, dzikirkurang, jumlahdzikir" type="Integer" array="False" size=""/>
+            <declare name="nama, dzikir, ya" type="String" array="False" size=""/>
+            <declare name="tasbih" type="Integer" array="True" size="100"/>
+            <declare name="D" type="Integer" array="True" size="100"/>
+            <declare name="kodedzikir" type="Integer" array="False" size=""/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <do expression="ya ==&quot;Y&quot; || ya == &quot;y&quot;">
+                <call expression="header&#13;&#10;"/>
+                <output expression="&quot;BERIKUT LIST DZIKIR YANG DAPAT ANDA AMALKAN HARI INI : &quot;" newline="True"/>
+                <output expression="&quot;1. Istighfar : Astaghfirullahaladzim &quot;" newline="True"/>
+                <output expression="&quot;2. Tahmid : Alhamdulillah &quot;" newline="True"/>
+                <output expression="&quot;3. Tasbih  :Subhanallah &quot;" newline="True"/>
+                <output expression="&quot;4. Takbir : Allahuakbar&quot;" newline="True"/>
+                <output expression="&quot;5. Tahlil  :Laailahailallah&quot;" newline="True"/>
+                <output expression="&quot;6. Shalawat  : Allahumma solli 'alaa muhammad,wa'alaa aali muhammad&quot;" newline="True"/>
+                <output expression="&quot;Nama kamu\t\t :&quot;" newline="True"/>
+                <input variable="nama"/>
+                <output expression="&quot;Assalamu'alaikum &quot;" newline="True"/>
+                <output expression="nama" newline="True"/>
+                <output expression="&quot; Rasulullah SAW bersabda,tiada suatu kaum yang duduk sambil berdzikir kepada Allah melainkan mereka akan dikelilingi oleh malaikat, diselimuti oleh rahmat dan Allah akan mengingat mereka di hadapan makhluk yang ada di sisi-Nya. (HR. Bukhari). &quot;" newline="True"/>
+                <output expression="&quot;Berapa kali anda ingin berdzikir : &quot;" newline="True"/>
+                <input variable="jumlahdzikir"/>
+                <for variable="x" start="1" end="jumlahdzikir" direction="inc" step="1">
+                    <output expression="&quot;count dzikir&quot;" newline="True"/>
+                    <output expression="x" newline="True"/>
+                    <output expression="&quot;Kode Dzikir [1/2/3/4/5/6]\t : &quot;" newline="True"/>
+                    <input variable="kodedzikir"/>
+                    <if expression="kodedzikir == 1">
+                        <then>
+                            <output expression="&quot;Dzikir yang anda pilih\t : Astaghfirullahaladzim \t\t\t\t\t\t \u0623\u0633\u062A\u063A\u0641\u0631\u0644\u0644\u0647 \u0627\u0644\u0639\u0638\u064A\u0645&quot;" newline="True"/>
+                            <assign variable="tasbih[D]" expression="1"/>
+                        </then>
+                        <else>
+                            <if expression="kodedzikir == 2">
+                                <then>
+                                    <output expression="&quot;Dzikir yang anda pilih\t :  Alhamdulillah \t\t\t\t\t\t \u0627\u0644\u062D\u0645\u062F \u0644\u0644\u0647&quot;" newline="True"/>
+                                    <assign variable="tasbih[D]" expression="1"/>
+                                </then>
+                                <else>
+                                    <if expression="kodedzikir == 3">
+                                        <then>
+                                            <output expression="&quot;Dzikir yang anda pilih\t : Subhanallah \t\t\t\t\t\t\t \u0633\u0628\u062D\u0646 \u0627\u0644\u0644\u0647 &quot;" newline="True"/>
+                                            <assign variable="tasbih[D]" expression="1"/>
+                                        </then>
+                                        <else>
+                                            <if expression="kodedzikir == 4">
+                                                <then>
+                                                    <output expression="&quot;Dzikir yang anda pilih\t : Lailahailallah \t\t\t\t\t\t \u0644\u0627\u0627\u0644\u0647 \u0627\u0644\u0627 \u0627\u0644\u0644\u0647 &quot;" newline="True"/>
+                                                    <assign variable="tasbih[D]" expression="1"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="kodedzikir == 5">
+                                                        <then>
+                                                            <output expression="&quot;Dzikir yang anda pilih\t : Allahuakbar \t\t\t\t\t\t\t \u0627\u0644\u0644\u0647 \u0627\u0643\u0628\u0631&quot;" newline="True"/>
+                                                            <assign variable="tasbih[D]" expression="1"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="kodedzikir == 6">
+                                                                <then>
+                                                                    <output expression="&quot;Dzikir yang anda pilih\t : Allahumma solli 'alaa muhammad,wa'alaa aali muhammad \t\t\t\t\t\t \u0627\u0644\u0644\u0647\u0645 \u0635\u0644 \u0639\u0644 \u0633\u064A\u062F\u0646\u0627 \u0645\u062D\u0645\u062F \u0648 \u0639\u0644\u0649 \u0622\u0644  \u0633\u064A\u062F\u0646 \u0645\u062D\u0645\u062F&quot;" newline="True"/>
+                                                                    <assign variable="tasbih[D]" expression="1"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Maaf untuk saat ini anda bisa berdzikir dari enam pilihan diatas&quot;" newline="True"/>
+                                                                    <assign variable="tasbih[D]" expression="1"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="jumlah" expression="tasbih[D]"/>
+                </for>
+                <output expression="&quot;Jumlah Dzikir\t\t :&quot;" newline="True"/>
+                <output expression="jumlah" newline="True"/>
+                <output expression="&quot;Apakah anda ingin dzikir lagi?  [Y/T] : &quot;" newline="True"/>
+                <input variable="ya"/>
+            </do>
+            <call expression="closeHeader&#13;&#10;"/>
+        </body>
+    </function>
+    <function name="closeHeader" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+            <output expression="&quot;\t\t JAZAKALLAH KHAIRAN \t\t&quot;" newline="True"/>
+            <output expression="&quot; \t\t SEMOGA ISTIQOMAH DALAM BERDZIKIR \t\t&quot;" newline="True"/>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="header" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+            <output expression="&quot;\t\t AHLAN WA SAHLAN TO DZIKIR COUNTER! \t\t&quot;" newline="True"/>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

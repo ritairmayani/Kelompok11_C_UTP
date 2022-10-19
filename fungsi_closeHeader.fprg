@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-19 02:45:22 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLVBHM1RVMFM7MjAyMi0xMC0xOTswMjozODoyNiBQTTsyNjU2"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLVBHM1RVMFM7MjAyMi0xMC0xOTswMjo0NToyMiBQTTszOzI3NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="closeHeader" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+            <output expression="&quot;\t\t JAZAKALLAH KHAIRAN \t\t&quot;" newline="True"/>
+            <output expression="&quot; \t\t SEMOGA ISTIQOMAH DALAM BERDZIKIR \t\t&quot;" newline="True"/>
+            <output expression="&quot;======================================================&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
